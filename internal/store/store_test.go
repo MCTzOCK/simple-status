@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/config"
 )
 
 func testConfig(retries int, history int) *config.Config {

@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Flap protection via configurable consecutive `retries`.
 - In-memory bounded history and incident log per service.
 - Docker image (distroless), docker-compose example, Makefile,
-  GitHub Actions CI, goreleaser configuration.
+  goreleaser configuration.
 
-[Unreleased]: https://github.com/simple-status/simple-status/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/simple-status/simple-status/releases/tag/v0.1.0
+[Unreleased]: https://github.com/MCTzOCK/simple-status/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/MCTzOCK/simple-status/releases/tag/v0.1.0

@@ -30,10 +30,10 @@ and notification channels.
 
 ## Quickstart
 
-Download a [release](../../releases) binary, or:
+Download a [release](https://github.com/MCTzOCK/simple-status/releases) binary, or:
 
 ```sh
-go install simple-status/cmd/simple-status@latest   # after publishing a fork
+go install github.com/MCTzOCK/simple-status/cmd/simple-status@latest
 ```
 
 Then:
@@ -159,9 +159,6 @@ make run     # build and run with simple-status.yml
 ```
 
 Requires Go ≥ 1.25. See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow.
-The Go module is named `simple-status`; rename it to your repository path
-(`go mod edit -module github.com/you/simple-status` and fix the imports)
-when you publish a fork.
 
 ## License
 

@@ -17,11 +17,11 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"simple-status/internal/api"
-	"simple-status/internal/config"
-	"simple-status/internal/monitor"
-	"simple-status/internal/prober"
-	"simple-status/internal/store"
+	"github.com/MCTzOCK/simple-status/internal/api"
+	"github.com/MCTzOCK/simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/monitor"
+	"github.com/MCTzOCK/simple-status/internal/prober"
+	"github.com/MCTzOCK/simple-status/internal/store"
 )
 
 // version is overridden at build time via -ldflags "-X main.version=…".

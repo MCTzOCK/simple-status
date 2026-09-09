@@ -9,7 +9,7 @@ import (
 	"regexp"
 	"strings"
 
-	"simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/config"
 )
 
 // maxBodyBytes limits how much of a response body is read when a

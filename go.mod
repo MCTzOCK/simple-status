@@ -1,4 +1,4 @@
-module simple-status
+module github.com/MCTzOCK/simple-status
 
 go 1.27.1
 

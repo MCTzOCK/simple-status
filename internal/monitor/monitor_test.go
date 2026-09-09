@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"simple-status/internal/config"
-	"simple-status/internal/prober"
-	"simple-status/internal/store"
+	"github.com/MCTzOCK/simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/prober"
+	"github.com/MCTzOCK/simple-status/internal/store"
 )
 
 // fake controls all probes of type "fake"; sequence holds the results each

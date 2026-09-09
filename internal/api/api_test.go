@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"simple-status/internal/config"
-	"simple-status/internal/store"
+	"github.com/MCTzOCK/simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/store"
 )
 
 func testSetup(t *testing.T) http.Handler {

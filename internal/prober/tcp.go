@@ -6,7 +6,7 @@ import (
 	"net"
 	"strconv"
 
-	"simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/config"
 )
 
 func init() { Register("tcp", newTCPProbe) }

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/config"
 )
 
 func dnsService(mutate func(*config.Service)) config.Service {

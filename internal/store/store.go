@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/config"
 )
 
 // Status of a service as derived from its check history.

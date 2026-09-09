@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"time"
 
-	"simple-status/internal/config"
-	"simple-status/internal/store"
-	"simple-status/web"
+	"github.com/MCTzOCK/simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/store"
+	"github.com/MCTzOCK/simple-status/web"
 )
 
 // summaryHistoryLen limits how many recent history entries are included per

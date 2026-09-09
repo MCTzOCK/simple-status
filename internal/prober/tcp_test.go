@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/config"
 )
 
 func tcpService(target string) config.Service {

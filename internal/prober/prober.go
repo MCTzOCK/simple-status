@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/config"
 )
 
 // Result is the outcome of a single check. Timestamp and Duration are filled

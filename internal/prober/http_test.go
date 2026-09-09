@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"simple-status/internal/config"
+	"github.com/MCTzOCK/simple-status/internal/config"
 )
 
 func httpService(target string, mutate func(*config.Service)) config.Service {
