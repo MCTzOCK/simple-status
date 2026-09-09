@@ -1,0 +1,11 @@
+# Example deployment: put your real configuration next to this file as
+# simple-status.yml, then run `docker compose up -d`.
+services:
+  simple-status:
+    build: .
+    # image: ghcr.io/your-org/simple-status:latest  # when using a published image
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./simple-status.yml:/etc/simple-status/config.yml:ro
+    restart: unless-stopped

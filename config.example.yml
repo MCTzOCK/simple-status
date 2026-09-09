@@ -1,0 +1,51 @@
+# simple-status example configuration.
+# Every setting is documented in README.md → "Configuration reference".
+# Copy to simple-status.yml and adjust to your environment.
+
+title: Example Status
+listen: ":8080"
+
+# Defaults for every service; each service may override them.
+interval: 30s   # time between two checks
+timeout: 10s    # deadline for a single check
+retries: 1      # consecutive failed checks before a service counts as down
+history: 720    # check results kept per service (in memory)
+
+services:
+  # A website: any 2xx status is healthy.
+  - id: website
+    name: Website
+    group: Public
+    type: http
+    target: https://example.com/
+
+  # An API with a stricter contract: exact status codes and a body pattern.
+  - id: api
+    name: Public API
+    group: Public
+    type: http
+    target: https://api.example.com/health
+    interval: 15s
+    expected_statuses: [200, 204]
+    body_pattern: '"status":"ok"'
+    headers:
+      Accept: application/json
+
+  # Endpoints with self-signed certificates can opt out of TLS verification:
+  #   insecure_tls: true
+
+  # A database reachable by TCP port.
+  - id: postgres
+    name: PostgreSQL
+    group: Infrastructure
+    type: tcp
+    target: db.internal.example:5432
+
+  # DNS records; record may be A (default), AAAA, CNAME, MX, NS or TXT.
+  - id: mail
+    name: Mail (MX)
+    group: Infrastructure
+    type: dns
+    target: example.com
+    record: mx
+    # resolver: 9.9.9.9   # query a specific DNS server instead of the system one

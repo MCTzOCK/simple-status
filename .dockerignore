@@ -1,0 +1,10 @@
+# Keep the build context minimal.
+.git
+.github
+bin/
+dist/
+docs/
+coverage.out
+*.md
+docker-compose.yml
+simple-status.yml

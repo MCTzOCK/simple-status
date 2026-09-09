@@ -1,0 +1,15 @@
+# Binaries and build artifacts
+/bin/
+/dist/
+/simple-status
+coverage.out
+*.test
+*.out
+
+# Local configuration may contain secrets
+/simple-status.yml
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
